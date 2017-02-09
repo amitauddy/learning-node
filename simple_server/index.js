@@ -1,10 +1,10 @@
 'use strict';
 
-const http = require('http')
-const express = require('express')
+const http = require('http');
+const express = require('express');
 
 const app = express();
-app.use(express.static('./templates'))
+app.use(express.static('/templates'))
 const httpServer = http.createServer(app);
 
 httpServer.listen(3000, function(err){
