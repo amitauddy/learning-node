@@ -1,0 +1,6 @@
+{
+    "webServer": {
+        "port":3005,
+        "staticFolder":"./templates"
+    }
+}
