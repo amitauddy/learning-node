@@ -11,7 +11,7 @@ const app = express();
 app.use(express.static(config.webServer.staticFolder));
 const httpServer = http.createServer(app);
 
-httpServer.listen(config.webServer.port , function(err){
+httpServer.listen(config.webServer.port , (err) => {
     if (err) {
         console.log("error creating server!");
         return;

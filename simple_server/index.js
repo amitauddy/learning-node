@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static('/templates'))
 const httpServer = http.createServer(app);
 
-httpServer.listen(3000, function(err){
+httpServer.listen(3000, (err) => {
     if (err) {
         console.log("error creating server!");
         return;
